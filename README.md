@@ -17,4 +17,17 @@ for creating panel to select inputs, the code has been partially modified by me.
 
 Default view of KochCreate"
 
-![](images/filename%20defaultview.PNG)
+![](images/defaultview.PNG)
+
+Koch curve with sides = 3 and order = 4
+
+![](images/ord4side3.PNG)
+
+Variant generated with user inputs
+![](images/new2.PNG)
+
+Variants generated with randomly
+![](images/random2.PNG)
+![](images/random3.PNG)
+![](images/random4.PNG)
+![](images/random5.PNG)
