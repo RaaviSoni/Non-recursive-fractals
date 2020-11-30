@@ -1,5 +1,5 @@
 # Non-recursive-fractals
-This project named 'KochCreate' creates Koch Fractals using a Non-Recursive algorithm
+The web application developed named 'KochCreate' creates Koch Fractals using a Non-Recursive algorithm
 
 Steps to execute:
 
