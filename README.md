@@ -1,5 +1,5 @@
 # Non-recursive-fractals
-This project creates Koch Fractals using a Non-Recursive algorithm
+This project named 'KochCreate' creates Koch Fractals using a Non-Recursive algorithm
 
 Steps to execute:
 
@@ -14,3 +14,7 @@ There are 3 code files:
 
 panelfile includes a JavaScript library(used from: https://github.com/bit101/quicksettings/blob/master/quicksettings.js)
 for creating panel to select inputs, the code has been partially modified by me.
+
+Default view of KochCreate"
+
+![](images/filename%20defaultview.PNG)
