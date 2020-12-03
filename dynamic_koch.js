@@ -3,10 +3,10 @@ var a = 0
 var b = 0
 var time = 0
 
-var canvas = document.getElementById("koch"),
-	context = canvas.getContext("2d"); //creation of a CanvasRenderingContext2D object.
-var top_position = canvas.getBoundingClientRect().top;
-var bottom_position = canvas.getBoundingClientRect().bottom;
+var canvas_area = document.getElementById("koch"),
+	context_2D = canvas_area.getContext("2d"); //creation of a CanvasRenderingContext2D object.
+var top_position = canvas_area.getBoundingClientRect().top;
+var bottom_position = canvas_area.getBoundingClientRect().bottom;
 var bgcolor = "#000000"; //Black
 var body = document.getElementsByTagName("body")[0];
 var width = body.clientWidth - 20;
@@ -14,8 +14,8 @@ var height =  body.clientHeight - 20;
 var x = width * 4 / 7,
 	y = height / 2;
 var figure_edge = width / 6;
-canvas.setAttribute("width", body.clientWidth - 20 );
-canvas.setAttribute("height", body.clientHeight - 10);
+canvas_area.setAttribute("width", body.clientWidth - 20 );
+canvas_area.setAttribute("height", body.clientHeight - 10);
 document.body.style.backgroundColor = bgcolor;
 
 //input selection
@@ -46,11 +46,11 @@ var time_display = QuickSettings.create(
 
 
 var logo = document.getElementById("logo");
-context.drawImage(logo, 0, 0, 0, 5);
+context_2D.drawImage(logo, 0, 0, 0, 5);
 
 
 //var intro = document.getElementById("intro");
-//context.drawImage(intro, -40, -40, -40, -40);
+//context_2D.drawImage(intro, -40, -40, -40, -40);
 
 
 KochCreate();
@@ -118,22 +118,24 @@ function build_curve() {
 }
 
 function connect_points() {
-	context.clearRect(0, 0, width, height); //To clear the screen
+	context_2D.clearRect(0, 0, width, height); //To clear the screen
 	
-	var gradient = context.createLinearGradient(0, 180, 80,0);
-	gradient.addColorStop("0", "magenta");
-	gradient.addColorStop("0.5" ,"blue");
-	gradient.addColorStop("1.0", "red");
+	var gradiant = context_2D.createLinearGradient(0, 180, 80,0);
+	var color1 = "magenta";
+	var color2 = "blue";
+	var color3 = "red";
+	gradiant.addColorStop("0", color1);
+	gradiant.addColorStop("0.5" ,color2);
+	gradiant.addColorStop("1.0", color3);
 	
-	// Fill with gradient
-	context.strokeStyle = gradient;
-	context.lineWidth = 3;
+	context_2D.strokeStyle = gradiant;
+	context_2D.lineWidth = 3;
 
 	for (var i = 0; i < arr_vertices.length - 1; i++) {
-			context.beginPath();
-			context.moveTo(arr_vertices[i].x_cordinate, arr_vertices[i].y_cordinate);
-			context.lineTo(arr_vertices[i + 1].x_cordinate, arr_vertices[i + 1].y_cordinate);
-			context.stroke();
+			context_2D.beginPath();
+			context_2D.moveTo(arr_vertices[i].x_cordinate, arr_vertices[i].y_cordinate);
+			context_2D.lineTo(arr_vertices[i + 1].x_cordinate, arr_vertices[i + 1].y_cordinate);
+			context_2D.stroke();
 	}
 
 }
