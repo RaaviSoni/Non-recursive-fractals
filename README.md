@@ -12,8 +12,8 @@ There are 3 code files:
 2. dynamic_koch.js
 3. panelfile.js
 
-panelfile includes a JavaScript library(used from: https://github.com/bit101/quicksettings/blob/master/quicksettings.js)
-for creating panel to select inputs, the code has been partially modified by me.
+//panelfile includes a JavaScript library(used from: https://github.com/bit101/quicksettings/blob/master/quicksettings.js)
+//for creating panel to select inputs, the code has been partially modified by me.
 
 Default view of KochCreate"
 
